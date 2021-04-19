@@ -6,7 +6,7 @@ check Kernel version
 
 
 ####kernel Version
-KERN=`uname -r | awk -F "." '{print$1}'`
+KernelVersion=`uname -r | awk -F "." '{print$1}'`
 
 if [ ${kernelversion} -ge 3 ]
 then 
