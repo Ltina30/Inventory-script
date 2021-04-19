@@ -8,7 +8,7 @@ check Kernel version
 ####kernel Version
 KERN=`uname -r | awk -F "." '{print$1}'`
 
-if [ ${kernelverion} -ge 3 ]
+if [ ${kernelversion} -ge 3 ]
 then 
 echo "kernel version PASS"
 else
