@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#Description:
+#Authout:
+#Date
+
+###Puppet Version
+Puppetversion=`puppet --version |awk -F"." '{print$2}'`
+if [ ${Puppetversion} -eq 4 ]
+then
+echo "User puppet check PASS"
+else
+echo "User puppet check FAILED"
+fi
